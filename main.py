@@ -12,9 +12,9 @@ zatacka.loadFromFile("test_zatacka", "test_zatacka.txt")
 roadSections = []
 roadSections.append(rs)
 rb = RoadBank(roadSections)
-pom = rb.findSameAndPrintBasedOnXYArea(zatacka, 100)
-
+pom = rb.findSameAndPrintBasedOnXYArea(zatacka, 95)
 rs.printRoadSectionToConsole()
+zatacka.createGPXFile()
 for item in pom:
     item.createGPXFile()
 
